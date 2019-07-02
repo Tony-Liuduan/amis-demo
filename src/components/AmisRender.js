@@ -12,7 +12,7 @@ export default class AMisRendererComp extends React.Component {
         const {
             schema
         } = this.props;
-        
+
         console.log(this.props);
 
         return (
@@ -45,12 +45,13 @@ export default class AMisRendererComp extends React.Component {
                                 config
                             }) => {
                                 // 用来发送 Ajax 请求，建议使用 axios
-                                console.log(
-                                    url,
-                                    method,
-                                    data,
-                                    config
-                                )
+                                window.fetch(url, { method, body: data })
+                                    .then(data => {
+                                        console.log('success:', data)
+                                    })
+                                    .catch(e => {
+                                        console.log('fail:', e)
+                                    })
                             },
                             notify: (type/**/, msg/*提示内容*/) => {
                                 // 用来提示用户

@@ -7,7 +7,7 @@ export const schema = {
   "body": {
     "type": "form",
     "title": "用户登录",
-
+    "api": "/api/mock2/form/saveForm",
 
     "controls": [
 
@@ -22,13 +22,6 @@ export const schema = {
         "name": "content",
         "required": true
       },
-      // {
-      //   "type": "button",
-      //   "actionType": "ajax",
-      //   "label": "提交",
-      //   "confirmText": "您确认要删除?",
-      //   "api": ""
-      // }
 
     ]
 
