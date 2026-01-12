@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Tony-Liuduan/amis-demo#readme",
   "devDependencies": {
-    "react-scripts": "3.0.1"
+    "react-scripts": "5.0.1"
   },
   "dependencies": {
     "amis": "^1.0.0-rc.5",
